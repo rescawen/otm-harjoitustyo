@@ -2,5 +2,5 @@
 │   └── viikko1
 │       └── komentorivi.txt
 └── README.md
-
+ristiriita
 
