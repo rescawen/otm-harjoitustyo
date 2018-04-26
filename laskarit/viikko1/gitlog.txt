@@ -1,0 +1,114 @@
+commit 01555f3710c1e515f24810afacf18bf7a2bc11bd
+Author: Wenlei Dai <resca.wen@gmail.com>
+Date:   Thu Apr 26 17:05:58 2018 +0300
+
+    harjoitukset valmis
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit c5d31841416fb3c8582b6c9e12c27a47717e54d5
+Author: Wenlei Dai <resca.wen@gmail.com>
+Date:   Thu Apr 26 16:58:39 2018 +0300
+
+    tiedostoja lisatty
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit ee64cb273ad7257992969f9811967494a972465d
+Author: Wenlei Dai <resca.wen@gmail.com>
+Date:   Thu Apr 26 16:40:44 2018 +0300
+
+    git add -p
+
+ eka.txt    | 2 +-
+ kolmas.txt | 2 ++
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+commit 9a1c452130ba14b14f9c63c4877f4d8aaf643843
+Author: Wenlei Dai <resca.wen@gmail.com>
+Date:   Thu Apr 26 16:34:19 2018 +0300
+
+    tiedosto changed to eka
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit dd6b186b135abb555474a2e8297ed44f0d6347cc
+Author: Wenlei Dai <resca.wen@gmail.com>
+Date:   Thu Apr 26 16:33:12 2018 +0300
+
+    deleted toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 4b20030b36ebad6cb59431b2b471c496926132ef
+Author: Wenlei Dai <resca.wen@gmail.com>
+Date:   Thu Apr 26 16:30:58 2018 +0300
+
+    deleted some text, added even more
+
+ tiedosto.txt | 14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+
+commit 39d3cfa7ef9be295de3d17b074bca5a523f41d49
+Author: Wenlei Dai <resca.wen@gmail.com>
+Date:   Thu Apr 26 16:29:09 2018 +0300
+
+    lots of text
+
+ tiedosto.txt | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit 629d3e9db96cd9ba63b37d0402e113b520d860bc
+Author: Wenlei Dai <resca.wen@gmail.com>
+Date:   Thu Apr 26 11:36:41 2018 +0300
+
+    more stuff
+
+ stuff/stuffpuff.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7f89c8e230d77ba44bee6e65b5d070b6c0a7b0ce
+Author: Wenlei Dai <resca.wen@gmail.com>
+Date:   Thu Apr 26 11:36:05 2018 +0300
+
+    muutoksia toiseen ja kolmanteen
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit d37bb56cddd69e37d2628a24d825a5d3c4916baa
+Author: Wenlei Dai <resca.wen@gmail.com>
+Date:   Thu Apr 26 11:35:10 2018 +0300
+
+    kolmas tiedosto
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 0a0d33e4c5c2594f8b619e4693c38a5b3f6f7fd8
+Author: Wenlei Dai <resca.wen@gmail.com>
+Date:   Thu Apr 26 11:31:03 2018 +0300
+
+    muutos ja lisays
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit f0fb54a503da8feedd7bae2506785706416d78ea
+Author: Wenlei Dai <resca.wen@gmail.com>
+Date:   Thu Apr 26 11:22:18 2018 +0300
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
