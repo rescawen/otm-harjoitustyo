@@ -16,26 +16,21 @@ Sovellus tehdään komentoliittymällä.
 
 ## Perusversion tarjoama toiminnallisuus
 
+### Ohjelmalla on kaksi päänäkymää
+
 ### Status
 
-- käyttäjä voi luoda järjestelmään käyttäjätunnuksen
-  - käyttäjätunnuksen täytyy olla uniikki ja pituudeltaan vähintään 3 merkkiä
-
-- käyttäjä voi kirjautua järjestelmään
-  - kirjautuminen onnistuu syötettäessä olemassaoleva käyttäjätunnus kirjautumislomakkeelle
-  - jos käyttäjää ei olemassa, ilmoittaa järjestelmä tästä
+- käyttäjä näkee tämän hetkisen tilanteen kaikista eri kotitalous töistä. Kuinka lähellä ne ovat syklin loppuun. 
 
 ### Manage Cycles
 
-- käyttäjä näkee omat tekemättömät työt eli _todot_
-
-- käyttäjä voi luoda uuden todon
-  - luou todo näkyy ainoastaan sen luoneelle käyttäjälle
-
-- käyttäjä voi merkitä todon tehdyksi, jolloin todo häviää listalta
-
-- käyttäjä voi kirjautua ulos järjestelmästä
+- käyttäjä näkee listan kaikista eri kotitalous töistä. 
+  - käyttäjä voi mennä tietyn työn sisälle
+  
+- kun käyttäjä on tietyn työn sisällä hänellä on seuraavat vaihtoehdot
+  - käyttäjä voi päivittää nykyisen syklin tilannetta
+  - käyttäjä voi muuttaa syklin luonnollista etenemistä
 
 ## Jatkokehitysideoita
 
-20-30 vuoden päästä mennään Applelle tai Xiaomille tekemään älytaloja. Tässä on perusfilosofia miten älytalon tulisi funktioida.
+20-30 vuoden päästä mennään Applelle tai Xiaomille tekemään älytaloja. Tässä on perusfilosofia miten älytalon tulisi toimia.
