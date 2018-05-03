@@ -8,3 +8,4 @@
 
 ### Viikko2
 
+![Unicafe Testikattavuus](https://user-images.githubusercontent.com/22350348/39563995-09ee0bc2-4ebb-11e8-93cc-c6e233e5a60d.png)
