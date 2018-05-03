@@ -2,6 +2,7 @@
 ## Dokumentaatio
 
 ### [Vaatimusmäärittely](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
+### [Työaikakirjanpito](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
 
 ## Tehtävät
 ### Viikko1
