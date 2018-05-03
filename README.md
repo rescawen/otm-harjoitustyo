@@ -1,4 +1,8 @@
 # OTM-harjoitustyö
+## Dokumentaatio
+
+### [Vaatimusmäärittely](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
+
 ## Tehtävät
 ### Viikko1
 
