@@ -3,4 +3,5 @@
 | päivä | aika | mitä tein  |
 | :----:|:-----| :-----|
 | 3.5. | 1  | vaatimusmäärittely|
-| yht   | 1  | | 
+| 6.5. | 2 | maven setup ongelmien ratkaisu, readme muutoksia|
+| yht   | 3  | | 
