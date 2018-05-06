@@ -36,7 +36,7 @@ Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto _target/site/ja
 
 ### Viikko2
 
-![Unicafe Testikattavuus]https://raw.githubusercontent.com/rescawen/otm-harjoitustyo/master/laskarit/kuvat/Screenshot%20from%202018-05-03%2010-11-26.png)
+![Unicafe Testikattavuus](https://raw.githubusercontent.com/rescawen/otm-harjoitustyo/master/laskarit/kuvat/Screenshot%20from%202018-05-03%2010-11-26.png)
 
 ### Viikko3
 
