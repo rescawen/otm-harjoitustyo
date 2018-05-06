@@ -36,8 +36,8 @@ Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto _target/site/ja
 
 ### Viikko2
 
-![Unicafe Testikattavuus](https://user-images.githubusercontent.com/22350348/39563995-09ee0bc2-4ebb-11e8-93cc-c6e233e5a60d.png)
+![Unicafe Testikattavuus]https://raw.githubusercontent.com/rescawen/otm-harjoitustyo/master/laskarit/kuvat/Screenshot%20from%202018-05-03%2010-11-26.png)
 
 ### Viikko3
 
-![Sekvenssi kaavio 3](https://photos.app.goo.gl/NkBaN6MxNcfgH1Sx9)
+![Sekvenssi kaavio 3](https://raw.githubusercontent.com/rescawen/otm-harjoitustyo/master/laskarit/kuvat/1525605893766-2a052903-17ae-47de-8041-a55fc1a997a5.jpg)
