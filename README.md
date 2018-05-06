@@ -1,8 +1,13 @@
 # OTM-harjoitustyö
 ## Dokumentaatio
 
-### [Vaatimusmäärittely](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
-### [Työaikakirjanpito](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
+#### [Käyttöohje](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/kayttoohje.md)
+#### [Vaatimusmäärittely](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
+#### [Arkkitehtuurikuvaus](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
+#### [Testausdokumentti](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/testaus.md)
+#### [Työaikakirjanpito](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
+
+## Releaset
 
 ## Tehtävät
 ### Viikko1
