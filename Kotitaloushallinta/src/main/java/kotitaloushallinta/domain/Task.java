@@ -5,6 +5,9 @@
  */
 package kotitaloushallinta.domain;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 /**
  *
  * @author wenlei
@@ -21,8 +24,29 @@ public class Task {
         this.name = name;
         this.cycleLength = cycleLength;
     }
+
+   
+    
+    class CycleIncrease extends TimerTask {
+
+    @Override
+    public void run() {
+        cycleNow++;
+        
+        System.out.println(cycleNow);
+        
+        if (cycleNow == cycleLength) {
+            cycleNow = 0;
+        }
+    }
+    
+}
     
     public void startCycle() {
+        
+        Timer timer = new Timer();
+        timer.schedule(new CycleIncrease(), 0, 1000);
+        
         
     }
     
@@ -35,5 +59,9 @@ public class Task {
     }
     
     
-    
+
 }
+
+
+
+
