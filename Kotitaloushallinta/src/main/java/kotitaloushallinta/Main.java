@@ -3,6 +3,7 @@ package kotitaloushallinta;
 import kotitaloushallinta.ui.EdesTakaisinSovellus;
 import static javafx.application.Application.launch;
 import kotitaloushallinta.domain.Task;
+import kotitaloushallinta.ui.Treetest;
 
 
 public class Main {
@@ -13,6 +14,7 @@ public class Main {
         
         test.startCycle();
         
-        launch(EdesTakaisinSovellus.class);
+        //launch(EdesTakaisinSovellus.class);
+        launch(Treetest.class);
     }
 }

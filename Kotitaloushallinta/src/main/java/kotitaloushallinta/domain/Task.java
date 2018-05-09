@@ -45,7 +45,7 @@ public class Task {
     public void startCycle() {
         
         Timer timer = new Timer();
-        timer.schedule(new CycleIncrease(), 0, 1000);
+        timer.schedule(new CycleIncrease(), 0, 1000); // eventually 1000 * 60 * 60 aka in hours
         
         
     }
