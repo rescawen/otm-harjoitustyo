@@ -8,4 +8,4 @@
 | 8.5. | 0.5| tärkein peruslogiikka tehty|
 | 9.5. | 1| perus käyttöliittymä demo|
 | 10.5. | 1| pari ensimmäistä testiä|
-| yht   | 7 | | 
+| yht   | 8 | | 
