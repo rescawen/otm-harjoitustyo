@@ -8,4 +8,8 @@
 | 8.5. | 0.5| tärkein peruslogiikka tehty|
 | 9.5. | 1| perus käyttöliittymä demo|
 | 10.5. | 1| pari ensimmäistä testiä|
-| yht   | 8 | | 
+| 13.5. | 1| käyttöliittymä edellyksiä|
+| 15.5. | 2| arkkitehtuurin ymmärtämistä, checkstyle otettu käyttöön|
+| 16.5. | 1.5| arkkitehtuurin implimentointi|
+| 17.5. | 0.5| repositorian siivominen|
+| yht   | 13 | | 
