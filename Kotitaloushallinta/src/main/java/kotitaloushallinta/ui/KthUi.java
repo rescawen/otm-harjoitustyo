@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package kotitaloushallinta.ui;
 
 import javafx.application.Application;
@@ -14,12 +10,15 @@ import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import kotitaloushallinta.domain.TaskService;
 
-/**
- *
- * @author wenlei
- */
-public class Treetest extends Application {
+
+
+
+
+public class KthUi extends Application {
+    
+    private TaskService taskService;
     
     Stage window;
     TreeView<String> tree;
@@ -37,6 +36,8 @@ public class Treetest extends Application {
         root.setExpanded(true);
         
         //status
+        
+        
         
         status = makeBranch("Status", root);
         makeBranch("Washing laundry", status);

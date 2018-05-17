@@ -13,6 +13,8 @@ import java.util.TimerTask;
  * @author wenlei
  */
 public class Task {
+    
+    private int id;
 
     private String name;
 
@@ -22,9 +24,20 @@ public class Task {
     
     private boolean cycleActive;
 
-    public Task(String name, int cycleLength) {
+    public Task(int id, String name, int cycleLength) {
+        this.id = id;
         this.name = name;
         this.cycleLength = cycleLength;
+    }
+    
+    public Task(String name, int cycleLength) {
+        
+        this.name = name;
+        this.cycleLength = cycleLength;
+    }
+    
+    public void setId(int id) {
+        this.id = id;
     }
 
     class CycleIncrease extends TimerTask {
