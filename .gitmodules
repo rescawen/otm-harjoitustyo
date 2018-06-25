@@ -1,0 +1,3 @@
+[submodule "electron-react-redux-boilerplate"]
+	path = electron-react-redux-boilerplate
+	url = https://github.com/jschr/electron-react-redux-boilerplate.git
