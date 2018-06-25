@@ -7,8 +7,6 @@
 #### [Testausdokumentti](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/testaus.md)
 #### [Työaikakirjanpito](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
 
-toimiiko?
-
 ## Releaset
 
 ## Komentorivitoiminnot
