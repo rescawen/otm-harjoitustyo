@@ -8,10 +8,22 @@ export default class Task extends Component {
     };
     render() {
 
+        let timeRightNow = new Date().getTime();
+        let timeAtCreation = this.props.timeAtCreation;
+        let timeLeft = Math.floor((timeRightNow - timeAtCreation)/(60*60*24*60)) % this.props.days;
+
+
         const daysList = [];
 
         for (let i = 0; i < this.props.days; i++) {
-            daysList.push(<Day key={i} />)
+
+            if (i < timeLeft) {
+                daysList.push(<Day key={i} dayHasPassed='true' />)
+            } else {
+                daysList.push(<Day key={i} dayHasPassed='false' />)
+            }
+
+            
         }
 
         return (
