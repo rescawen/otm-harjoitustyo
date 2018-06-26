@@ -9,10 +9,10 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <h2>Login</h2>
-        <input onChange={this.handleChange} type="text" value={this.state.username} />
-        <button onClick={this.handleLogin}>Log In</button>
-      </div>
+        <Task title="Changing bedsheets" />
+        <Task title="Changing bedsheets" />
+        <Task title="Changing bedsheets" />
+    </div>
     );
   }
 }
