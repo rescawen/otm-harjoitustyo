@@ -9,9 +9,9 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Task title="Changing bedsheets" />
-        <Task title="Changing bedsheets" />
-        <Task title="Changing bedsheets" />
+        <Task title="Changing bedsheets" days="7"/>
+        <Task title="Changing bedsheets" days="7"/>
+        <Task title="Changing bedsheets" days="7"/>
     </div>
     );
   }
