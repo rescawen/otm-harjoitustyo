@@ -9,9 +9,9 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Task title="Changing bedsheets" days="7"/>
-        <Task title="Changing bedsheets" days="7"/>
-        <Task title="Changing bedsheets" days="7"/>
+        <Task title="Changing bedsheets" days="7" timeAtCreation="1529848301000"/>
+        <Task title="Changing bedsheets" days="7" timeAtCreation="1530021737000"/>
+        <Task title="Changing bedsheets" days="7" timeAtCreation="1529848301000"/>
     </div>
     );
   }
