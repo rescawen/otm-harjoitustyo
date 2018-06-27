@@ -25,12 +25,20 @@ cd Kotitaloushallinta
 npm install
 ```
 
+### Suorittaminen
+
+Tuotanto sovelluksen käynnistäminen komennolla
+
+```
+npm run develop
+```
+
 ### Testaus
 
 Testit suoritetaan komennolla
 
 ```
-npm run develop
+npm run test
 ```
 
 Testikattavuusraportti luodaan komennolla
