@@ -16,18 +16,28 @@ Javascript ja Electron Framework
 
 ## Komentorivitoiminnot
 
+### Asentaminen
+
+Kloonaa tämä kyseinen repositorio
+
+```
+cd Kotitaloushallinta
+npm install
+```
+
 ### Testaus
 
 Testit suoritetaan komennolla
 
 ```
-mvn test
+npm run develop
 ```
 
 Testikattavuusraportti luodaan komennolla
 
 ```
-mvn jacoco:report
+?
 ```
 
-Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto _target/site/jacoco/index.html_
+Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto 
+?

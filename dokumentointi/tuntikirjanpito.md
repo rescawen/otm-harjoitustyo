@@ -25,5 +25,6 @@ Uusi nykyinen projekti
 | 25.6. | 1 | boilerplate kloonattu otm-harjoitustyö repositorioon|
 | 25.6. | 2 | käyttöliittymän alku työstäminen|
 | 26.6. | 3.5 | käyttöliittymän perus toiminallisuus melkein valmis|
-| yht   | 15.5 | | 
+| 27.6. | 0.5 | vaatimusmäärittely tällä kertaa oikeasti valmiina|
+| yht   | 16 | | 
 
