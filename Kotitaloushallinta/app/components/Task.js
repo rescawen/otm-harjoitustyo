@@ -17,7 +17,7 @@ export default class Task extends Component {
         const daysList = [];
 
         for (let i = 0; i < this.props.days; i++) {
-
+        // still need to work out frontend logic how does cycle end and start?
             if (daysLeft == 0) {
                 daysList.push(<Day key={i} dayHasPassed='false' />)
             } else if (i < this.props.days - daysLeft) {

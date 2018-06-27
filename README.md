@@ -1,4 +1,9 @@
 # OTM-harjoitustyö
+
+## Kieli
+
+Javascript ja Electron Framework
+
 ## Dokumentaatio
 
 #### [Käyttöohje](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/kayttoohje.md)

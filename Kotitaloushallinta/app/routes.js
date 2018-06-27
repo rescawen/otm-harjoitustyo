@@ -7,6 +7,5 @@ import LoggedInPage from './containers/LoggedInPage';
 export default (
   <Switch>
     <Route exact path="/" component={HomePage} />
-    
   </Switch>
 );
