@@ -1,5 +1,6 @@
 import { createAction } from 'redux-actions';
 
 export default {
-  displayTask: createAction('DISPLAY_TASK'),
+  loadTasks: createAction('LOAD_TASKS'),
+  newTask: createAction('NEW_TASK')
 };
