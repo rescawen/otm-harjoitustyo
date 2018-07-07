@@ -6,16 +6,21 @@ import thunk from 'redux-thunk';
 import user from './reducers/user';
 import userActions from './actions/user';
 
+import home from './reducers/home';
+import homeActions from './actions/home';
+
 export default function configureStore(initialState, routerHistory) {
   const router = routerMiddleware(routerHistory);
 
   const actionCreators = {
     ...userActions,
+    ...homeActions,
     push
   };
 
   const reducers = {
     user,
+    home,
     routing
   };
 
