@@ -1,5 +1,18 @@
 # työaikakirjanpito
 
+Uusi nykyinen projekti
+
+| päivä | aika | mitä tein  |
+| :----:|:-----| :-----|
+| 1-20.6. | 5  | Electronin tutustuminen, https://www.youtube.com/watch?v=kN1Czs0m1SU&t=796s , https://www.youtube.com/watch?v=h6MB62_5zzQ&t=399s|
+| 21-24.6. | 4 | boilerplate hackkaamista|
+| 25.6. | 1 | boilerplate kloonattu otm-harjoitustyö repositorioon|
+| 25.6. | 2 | käyttöliittymän alku työstäminen|
+| 26.6. | 3.5 | käyttöliittymän perus toiminallisuus melkein valmis|
+| 27.6. | 0.5 | vaatimusmäärittely tällä kertaa oikeasti valmiina|
+| yht   | 16 | | 
+
+
 Alkuperäinen projekti 
 
 | päivä | aika | mitä tein  |
@@ -16,12 +29,4 @@ Alkuperäinen projekti
 | 17.5. | 0.5| repositorian siivominen|
 | yht   | 13 | | 
 
-Uusi nykyinen projekti
-
-| päivä | aika | mitä tein  |
-| :----:|:-----| :-----|
-| 1-20.6. | 5  | Electronin tutustuminen, https://www.youtube.com/watch?v=kN1Czs0m1SU&t=796s , https://www.youtube.com/watch?v=h6MB62_5zzQ&t=399s|
-| 21-24.6. | 4 | boilerplate hackkaamista|
-| 25.6. | 1 | boilerplate kloonattu otm-harjoitustyö repositorioon|
-| yht   | 10 | | 
 

@@ -9,9 +9,14 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Task title="Changing bedsheets" />
-        <Task title="Changing bedsheets" />
-        <Task title="Changing bedsheets" />
+        {/* 24.6 ~~ 3 days ago */}
+        <Task title="Changing bedsheets" days="7" timeAtCreation="1529863189000"/> 
+        {/* 23.6 ~~ 4 days ago */}
+        <Task title="Vacuuming" days="5" timeAtCreation="1529776789000"/>
+        {/* 27.6 ~~ now */}
+        <Task title="Stocking refrigerator" days="4" timeAtCreation="1530122615000"/>
+        {/* 22.6 ~~ 5 days ago */}
+        <Task title="Cleaning toilet" days="6" timeAtCreation="1529690615000"/>
     </div>
     );
   }

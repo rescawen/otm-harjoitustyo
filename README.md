@@ -1,4 +1,9 @@
 # OTM-harjoitustyö
+
+## Kieli
+
+Javascript ja Electron Framework
+
 ## Dokumentaatio
 
 #### [Käyttöohje](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/kayttoohje.md)
@@ -11,18 +16,36 @@
 
 ## Komentorivitoiminnot
 
+### Asentaminen
+
+Kloonaa tämä kyseinen repositorio
+
+```
+cd Kotitaloushallinta
+npm install
+```
+
+### Suorittaminen
+
+Tuotanto sovelluksen käynnistäminen komennolla
+
+```
+npm run develop
+```
+
 ### Testaus
 
 Testit suoritetaan komennolla
 
 ```
-mvn test
+npm run test
 ```
 
 Testikattavuusraportti luodaan komennolla
 
 ```
-mvn jacoco:report
+?
 ```
 
-Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto _target/site/jacoco/index.html_
+Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto 
+?
