@@ -19,7 +19,7 @@ export default class Home extends Component {
       <Task 
         title={task.title}
         days={task.days}
-        timeAtCreation={task.timeAtCreation}
+        startingTime={task.startingTime}
       />
     ));
     return (

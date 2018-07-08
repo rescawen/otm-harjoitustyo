@@ -19,17 +19,17 @@ const initialState = {
         {
           title: 'Changing bedsheets',
           days: '7',
-          timeAtCreation: "1529863189000"
+          startingTime: "1529863189000"
         },
         {
           title: 'Vacuuming',
           days: '5',
-          timeAtCreation: "1529776789000"
+          startingTime: "1529776789000"
         },
         {
           title: 'Stocking refrigerator',
           days: '4',
-          timeAtCreation: "1530122615000"
+          startingTime: "1530122615000"
         }
       ]
   }
