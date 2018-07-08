@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 
-export default class Home extends Component {
+export default class Day extends Component {
   static propTypes = {
 
   };

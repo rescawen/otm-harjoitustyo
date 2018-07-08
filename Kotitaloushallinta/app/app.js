@@ -30,15 +30,11 @@ const initialState = {
           title: 'Stocking refrigerator',
           days: '4',
           timeAtCreation: "1530122615000"
-        },
-        {
-          title: 'Cleaning toilet',
-          days: '6',
-          timeAtCreation: "1529690615000"
         }
       ]
   }
 };
+
 const routerHistory = createMemoryHistory();
 const store = configureStore(initialState, routerHistory);
 syncHistoryWithStore(store, routerHistory);
