@@ -3,7 +3,7 @@ import { push } from 'react-router-redux';
 import { bindActionCreators } from 'redux';
 import Home from '../components/Home';
 import homeActions from '../actions/home';
-import { withRouter } from 'react-router'
+
 
 const mapStateToProps = (state) => {
 	console.log('Loading HomePage');

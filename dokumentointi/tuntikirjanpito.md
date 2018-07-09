@@ -12,7 +12,8 @@ Uusi nykyinen projekti
 | 27.6. | 0.5 | vaatimusmäärittely tällä kertaa oikeasti valmiina|
 | 7.7. | 3 | redux state työstäminen|
 | 8.7. | 4 | redux state työstäminen ja testi asioita|
-| yht   | 23 | | 
+| 9.7. | 3 | taskien lisääminen toimii alustavasti|
+| yht   | 27 | | 
 
 
 Alkuperäinen projekti 
