@@ -2,18 +2,21 @@ import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
 import { bindActionCreators } from 'redux';
 import Home from '../components/Home';
-import userActions from '../actions/user';
+import homeActions from '../actions/home';
 
 const mapStateToProps = (state) => {
-  return state;
+	console.log('Loading HomePage');
+	console.log(state);
+  return {
+	  tasks: state.home.tasks
+	};
 };
 
 const mapDispatchToProps = (dispatch) => {
-  const user = bindActionCreators(userActions, dispatch);
+  const home = bindActionCreators(homeActions, dispatch);
   return {
-    onLogin: (data) => {
-      user.login(data);
-      dispatch(push('/loggedin'));
+    loadTasks: (data) => {
+      home.loadTasks(data);
     }
   };
 };

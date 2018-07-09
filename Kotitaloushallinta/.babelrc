@@ -1,4 +1,18 @@
 {
-  "presets": ["es2015", "stage-0", "react"],
-  "plugins": ["transform-decorators-legacy", "transform-runtime"]
+  "presets": [
+    "es2015",
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-runtime"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "istanbul"
+      ]
+    }
+  }
 }

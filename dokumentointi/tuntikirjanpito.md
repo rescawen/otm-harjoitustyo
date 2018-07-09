@@ -10,7 +10,9 @@ Uusi nykyinen projekti
 | 25.6. | 2 | käyttöliittymän alku työstäminen|
 | 26.6. | 3.5 | käyttöliittymän perus toiminallisuus melkein valmis|
 | 27.6. | 0.5 | vaatimusmäärittely tällä kertaa oikeasti valmiina|
-| yht   | 16 | | 
+| 7.7. | 3 | redux state työstäminen|
+| 8.7. | 4 | redux state työstäminen ja testi asioita|
+| yht   | 23 | | 
 
 
 Alkuperäinen projekti 

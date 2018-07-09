@@ -9,18 +9,26 @@ describe('actions', () => {
 
   describe('home', () => {
     
-    it('should display task title', () => {
+    it('should load tasks', () => {
       const store = mockStore({});
+      const currentTime = Date.now();
       const expectedActions = [{
-        type: 'DISPLAY_TASK',
-        // WHAT SHOULD I PUT IN PAYLOAD?
+        type: 'LOAD_TASKS',
         payload: {
-          title: 'Changing bedsheets',
+          task: {
+            title: 'Test Task',
+            days: '5',
+            startingTime: currentTime
+          }
         }
       }];
 
-      store.dispatch(actions.displayTask({
-        title: 'Changing bedsheets',
+      store.dispatch(actions.loadTasks({
+        task: {
+          title: 'Test Task',
+          days: '5',
+          startingTime: currentTime
+        }
       }));
 
       expect(store.getActions()).deep.equal(expectedActions);
