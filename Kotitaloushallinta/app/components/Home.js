@@ -13,12 +13,24 @@ export default class Home extends Component {
     this.props.goToAddTask();
   };
 
+  editTask = (payload) => {
+    this.props.editTask(payload);
+  };
+
+  deleteTask = (payload) => {
+      this.props.deleteTask(payload);
+  }
+
   static propTypes = {
     loadTasks: PropTypes.func.isRequired,
     goToAddTask: PropTypes.func.isRequired,
+    editTask: PropTypes.func.isRequired,
+    deleteTask: PropTypes.func.isRequired,
     tasks: PropTypes.array,
     task: PropTypes.object
   };
+
+  
 
   render() {
     const tasksList = this.props.tasks.map(task => (
@@ -27,6 +39,8 @@ export default class Home extends Component {
         days={task.days}
         startingTime={task.startingTime}
         id={task.id}
+        deleteTask={this.deleteTask}
+        editTask={this.editTask}
       />
     ));
     return (
