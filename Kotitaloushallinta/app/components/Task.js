@@ -4,7 +4,8 @@ import Day from './Day';
 
 export default class Task extends Component {
     static propTypes = {
-
+        deleteTask: PropTypes.func.isRequired,
+        editTask: PropTypes.func.isRequired
     };
     render() {
 
@@ -38,6 +39,8 @@ export default class Task extends Component {
                 <div className="row">
                     {daysList}
                 </div>
+                <button onClick={() => { this.props.deleteTask(this.props.id) }}>Delete Task</button> 
+                <button onClick={() => { this.props.editTask(this.props.id) }}>Edit Task</button>
             </div>
         );
     }

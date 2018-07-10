@@ -9,7 +9,7 @@ const replaceByKey = (array, params, newValue) => {
   array.some(function(item, index) {
     if(array[index][params.key] === params.value){
       array[index] = newValue
-      return true;
+      return true;   
     }
     return false;
   });

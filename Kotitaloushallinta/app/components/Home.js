@@ -19,12 +19,11 @@ export default class Home extends Component {
 
   deleteTask = (payload) => {
       this.props.deleteTask(payload);
-  }
+  };
 
   static propTypes = {
     loadTasks: PropTypes.func.isRequired,
     goToAddTask: PropTypes.func.isRequired,
-    editTask: PropTypes.func.isRequired,
     deleteTask: PropTypes.func.isRequired,
     tasks: PropTypes.array,
     task: PropTypes.object

@@ -23,6 +23,15 @@ const mapDispatchToProps = (dispatch) => {
     goToAddTask: () => {
       console.log('Calling dispatch for /AddTask');
       dispatch(push('/AddTask'));
+    },
+    editTask: (data) => {
+      console.log('Calling dispatch for /EditTask and passing Id');
+      dispatch(push('/EditTask/' + data));
+    },
+    deleteTask: (data) => {
+      home.deleteTask(data);
+      console.log('Reloading Home');
+      dispatch(push('/'));
     }
   };
 };
