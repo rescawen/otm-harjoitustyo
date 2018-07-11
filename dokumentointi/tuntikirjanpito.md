@@ -13,7 +13,9 @@ Uusi nykyinen projekti
 | 7.7. | 3 | redux state työstäminen|
 | 8.7. | 4 | redux state työstäminen ja testi asioita|
 | 9.7. | 3 | taskien lisääminen toimii alustavasti|
-| yht   | 27 | | 
+| 10.7. | 1 | testien kirjottaminen|
+| 11.7. | 2 | lisää testaus asioita ja tiedostojen siivoomista|
+| yht   | 30 | | 
 
 
 Alkuperäinen projekti 

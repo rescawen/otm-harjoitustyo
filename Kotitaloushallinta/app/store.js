@@ -3,9 +3,6 @@ import { routerMiddleware, routerReducer as routing, push } from 'react-router-r
 import persistState from 'redux-localstorage';
 import thunk from 'redux-thunk';
 
-import user from './reducers/user';
-import userActions from './actions/user';
-
 import home from './reducers/home';
 import homeActions from './actions/home';
 
