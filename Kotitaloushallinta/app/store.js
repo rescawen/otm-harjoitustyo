@@ -13,13 +13,11 @@ export default function configureStore(initialState, routerHistory) {
   const router = routerMiddleware(routerHistory);
 
   const actionCreators = {
-    ...userActions,
     ...homeActions,
     push
   };
 
   const reducers = {
-    user,
     home,
     routing
   };
