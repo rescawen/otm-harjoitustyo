@@ -17,19 +17,53 @@ describe('actions', () => {
       const expectedActions = [{
         type: 'LOAD_TASKS',
         payload: {
-          task: {
-            title: 'Test Task',
-            days: '5',
-            startingTime: currentTime
+          home: {
+            tasks: [
+              {
+                title: 'Changing bedsheets',
+                days: '7',
+                startingTime: "1529863189000",
+                id: '1234567890'
+              },
+              {
+                title: 'Vacuuming',
+                days: '5',
+                startingTime: "1529776789000",
+                id: '1234567891'
+              },
+              {
+                title: 'Stocking refrigerator',
+                days: '4',
+                startingTime: "1530122615000",
+                id: '1234567892'
+              }
+            ]
           }
         }
       }];
 
       store.dispatch(actions.loadTasks({
-        task: {
-          title: 'Test Task',
-          days: '5',
-          startingTime: currentTime
+        home: {
+          tasks: [
+            {
+              title: 'Changing bedsheets',
+              days: '7',
+              startingTime: "1529863189000",
+              id: '1234567890'
+            },
+            {
+              title: 'Vacuuming',
+              days: '5',
+              startingTime: "1529776789000",
+              id: '1234567891'
+            },
+            {
+              title: 'Stocking refrigerator',
+              days: '4',
+              startingTime: "1530122615000",
+              id: '1234567892'
+            }
+          ]
         }
       }));
 
