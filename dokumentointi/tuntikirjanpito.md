@@ -15,7 +15,8 @@ Uusi nykyinen projekti
 | 9.7. | 3 | taskien lisääminen toimii alustavasti|
 | 10.7. | 1 | testien kirjottaminen|
 | 11.7. | 2 | lisää testaus asioita ja tiedostojen siivoomista|
-| yht   | 30 | | 
+| 12.7. | 1 | dokumentaatio kirjottaminen ja tiedostojen siivoomista|
+| yht   | 31 | | 
 
 
 Alkuperäinen projekti 
