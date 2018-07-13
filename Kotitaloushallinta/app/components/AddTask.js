@@ -10,7 +10,9 @@ export default class AddTask extends Component {
 
   state = {
     title: '',
+    titleError: '',
     days: '',
+    daysError: ''
   };
 
   goToHome = () => {
@@ -20,6 +22,51 @@ export default class AddTask extends Component {
   onChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   }
+
+  validate = () => {
+    let isError = false;
+    const errors = {
+      titleError: '',
+      daysError: ''
+    };
+
+    if (this.state.title.length < 1) {
+      isError = true;
+      errors.titleError = "Task title cannot be empty";
+    }
+
+    if (this.state.days < 1) {
+      isError = true;
+      errors.daysError = "Task has to have minimum of a 1 day cycle";
+    }
+
+    // what does this setstate do?
+    this.setState({
+      ...this.state,
+      ...errors
+    });
+
+    return isError;
+  };
+
+  onSubmit = () => {
+
+    const err = this.validate();
+
+    console.log(err);
+
+    if (err === true) {
+      // clear form
+      this.setState({
+        title: '',
+        titleError: '',
+        days: '',
+        daysError: ''
+      });
+    } else if (err === false) {
+      this.newTask;
+    }
+  };
 
   newTask = () => {
     const task = {
@@ -35,26 +82,30 @@ export default class AddTask extends Component {
     return (
       <div className="main">
         <br />
+
         <button class="btn waves-effect waves-light" onClick={this.goToHome}>Back to Homepage</button>
 
         <br />
         <br />
 
-        {/* BUGGY SELECTION PROBLEMS */}
+        
+          <div className="input-field s6">
+            <i class="material-icons prefix">home</i>
+            <label for="icon_prefix2">Task Name</label>
+            <input id="icon_prefix2" onChange={this.onChange} value={this.state.title} type="text"name="title" />
+          </div>
+          <div className="input-field s6">
+            <i class="material-icons prefix">access_time</i>
+            <label for="icon_prefix2">Day Cycle</label>
+            <input id="icon_prefix2" onChange={this.onChange} name="days" type="text" value={this.state.days} />
+          </div>
 
-        <div className="input-field s6">
-          <i class="material-icons prefix">home</i>
-          <input id="icon_prefix2" onChange={this.onChange} name="title" type="text" value={this.state.title} />
-          <label for="icon_prefix2">Task Name</label>
-        </div>
+          <br />
 
-
-        <div className="input-field s6">
-        <i class="material-icons prefix">access_time</i>
-          <input id="icon_prefix2" onChange={this.onChange} name="days" type="text" value={this.state.days} />
-          <label for="icon_prefix2">Day Cycle</label>
-        </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action" onClick={this.newTask}>Create Task<i class="material-icons right">send</i></button>
+          <div>
+            <button class="btn waves-effect waves-light" type="submit" name="action" onClick={this.onSubmit}>Create Task<i class="material-icons right">send</i></button>
+          </div>
+        
 
       </div>
     );

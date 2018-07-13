@@ -39,8 +39,8 @@ export default class Task extends Component {
                 <div className="row">
                     {daysList}
                 </div>
-                <button onClick={() => { this.props.deleteTask(this.props.id) }}>Delete Task</button> 
-                <button onClick={() => { this.props.editTask(this.props.id) }}>Edit Task</button>
+                <a onClick={() => { this.props.deleteTask(this.props.id) } } className="btn-floating right waves-effect waves-light red"><i className="material-icons">delete</i></a> 
+                <a onClick={() => { this.props.editTask(this.props.id) }} className="btn-floating right waves-effect waves-light red"><i className="material-icons">edit</i></a>
             </div>
         );
     }

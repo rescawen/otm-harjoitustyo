@@ -13,6 +13,10 @@ export default class Home extends Component {
     this.props.goToAddTask();
   };
 
+  triggerEditMode = () => {
+
+  };
+
   editTask = (payload) => {
     this.props.editTask(payload);
   };
@@ -45,7 +49,8 @@ export default class Home extends Component {
     return (
       <div>
         {tasksList}
-        <a onClick={this.goToAddTask} className="btn-floating btn-large right waves-effect waves-light red"><i className="material-icons">+</i></a>
+        <a onClick={this.triggerEditMode} className="btn-floating btn-large right waves-effect waves-light red"><i className="material-icons">menu</i></a>
+        <a onClick={this.goToAddTask} className="btn-floating btn-large right waves-effect waves-light red"><i className="material-icons">add</i></a>
       </div>
     );
   }
