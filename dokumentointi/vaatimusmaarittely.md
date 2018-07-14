@@ -38,7 +38,15 @@ Sovellus tehdään graafisella käyttöliittymällä. Electronissa käyttöliitt
 
 ## Jatkokehitysideoita
 
-- Monta käyttäjää samalle kotitaloudelle
+- Monta käyttäjää samalle kotitaloudelle, ilman ärsyttävää kirjautumista
+
+- Realiaikainen aika täyttäminen jokaiselle päivälle
+
+- Pitkille sykleille erilainen suorakulmio joka kuvaa kerrallaan viikkoa tai kuukkautta. Muuttuu dynamiisesti normi päiviksi kun viimeisellä viikolla
+
+- Lista muuttuu dynaamisesti että se task joka juuri valmistumassa siirtyy listan ylhäälle. 
+
+- Icon pushaa notifikation kun on se päivä jolloin pitää tehdä työn. 
 
 
 
