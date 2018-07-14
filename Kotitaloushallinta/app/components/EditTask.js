@@ -44,6 +44,34 @@ export default class EditTask extends Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
+  validate = () => {
+    let isError = false;
+    const errors = {
+      titleError: '',
+      daysError: ''
+    };
+
+    // how to display the error?
+
+    if (this.state.title.length < 1) {
+      isError = true;
+      errors.titleError = "Task title cannot be empty";
+    }
+
+    if (this.state.days < 1) {
+      isError = true;
+      errors.daysError = "Task has to have minimum of a 1 day cycle";
+    }
+
+    // what does this setstate do?
+    this.setState({
+      ...this.state,
+      ...errors
+    });
+
+    return isError;
+  };
+
   editTask = () => {
     const task = {
       title: this.state.title,

@@ -21,6 +21,10 @@ export default class Home extends Component {
     this.props.editTask(payload);
   };
 
+  deleteValidation = () => {
+    
+  };
+
   deleteTask = (payload) => {
       this.props.deleteTask(payload);
   };
@@ -42,6 +46,8 @@ export default class Home extends Component {
         days={task.days}
         startingTime={task.startingTime}
         id={task.id}
+
+        // conditional rendering for these 2
         deleteTask={this.deleteTask}
         editTask={this.editTask}
       />

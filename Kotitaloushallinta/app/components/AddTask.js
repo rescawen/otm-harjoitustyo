@@ -30,6 +30,8 @@ export default class AddTask extends Component {
       daysError: ''
     };
 
+    // error displayed through materializedcss, all good!
+
     if (this.state.title.length < 1) {
       isError = true;
       errors.titleError = "Task title cannot be empty";
