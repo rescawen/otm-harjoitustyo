@@ -26,23 +26,22 @@ export default class AddTask extends Component {
   validate = () => {
     let isError = false;
     const errors = {
-      titleError: '',
-      daysError: ''
+      titleError: 'validate valid',
+      daysError: 'validate valid'
     };
 
     // error displayed through materializedcss, all good!
 
     if (this.state.title.length < 1) {
       isError = true;
-      errors.titleError = "Task title cannot be empty";
+      errors.titleError = "validate invalid";
     }
 
-    if (this.state.days < 1) {
+    if (!Number.isInteger(Number(this.state.days)) || Number(this.state.days) < 1 || Number(this.state.days) > 30) {
       isError = true;
-      errors.daysError = "Task has to have minimum of a 1 day cycle";
+      errors.daysError = "validate invalid";
     }
 
-    // what does this setstate do?
     this.setState({
       ...this.state,
       ...errors
@@ -52,21 +51,8 @@ export default class AddTask extends Component {
   };
 
   onSubmit = () => {
-
-    const err = this.validate();
-
-    console.log(err);
-
-    if (err === true) {
-      // clear form
-      this.setState({
-        title: '',
-        titleError: '',
-        days: '',
-        daysError: ''
-      });
-    } else if (err === false) {
-      this.newTask;
+    if (this.validate() === false) {
+      this.newTask();
     }
   };
 
@@ -85,27 +71,29 @@ export default class AddTask extends Component {
       <div className="main">
         <br />
 
-        <button class="btn waves-effect waves-light" onClick={this.goToHome}>Back to Homepage</button>
+        <button className="btn waves-effect waves-light" onClick={this.goToHome}>Back to Homepage</button>
 
         <br />
         <br />
 
         
           <div className="input-field s6">
-            <i class="material-icons prefix">home</i>
+            <i className="material-icons prefix">home</i>
             <label for="icon_prefix2">Task Name</label>
-            <input id="icon_prefix2" onChange={this.onChange} value={this.state.title} type="text"name="title" />
+            <input id="icon_prefix2" onChange={this.onChange} className={this.state.titleError} name="title" type="text" value={this.state.title} />
+            <span class="helper-text" data-error="Task title cannot be empty" data-success=""></span>
           </div>
           <div className="input-field s6">
             <i class="material-icons prefix">access_time</i>
             <label for="icon_prefix2">Day Cycle</label>
-            <input id="icon_prefix2" onChange={this.onChange} name="days" type="text" value={this.state.days} />
+            <input id="icon_prefix2" onChange={this.onChange} className={this.state.daysError} name="days" type="text" value={this.state.days} />
+            <span className="helper-text" data-error="Task has to have a day cycle between 1 and 30" data-success=""></span>
           </div>
 
           <br />
 
           <div>
-            <button class="btn waves-effect waves-light" type="submit" name="action" onClick={this.onSubmit}>Create Task<i class="material-icons right">send</i></button>
+            <button className="btn waves-effect waves-light" type="submit" name="action" onClick={this.onSubmit}>Create Task<i className="material-icons right">send</i></button>
           </div>
         
 

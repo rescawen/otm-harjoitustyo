@@ -2,7 +2,8 @@ import { handleActions } from 'redux-actions';
 import actions from '../actions/home'
 
 const initialState = {
-  tasks: []
+  tasks: [],
+  editMode: false
 };
 
 const replaceByKey = (array, params, newValue) => {
@@ -38,7 +39,9 @@ export default handleActions({
     return { ...state, tasks: removeByKey(state.tasks, {key: 'id', value: action.payload})}
   },
   [actions.editTask]: (state, action) => {
-    console.log(action);
     return { ...state, tasks: replaceByKey(state.tasks, {key: 'id', value: action.payload.task.id}, action.payload.task)};
+  },
+  [actions.toggleEditMode]: (state, action) => {
+    return { ...state, editMode: !state.editMode };
   }
 }, initialState);

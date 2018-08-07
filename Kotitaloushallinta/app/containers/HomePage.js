@@ -10,7 +10,8 @@ const mapStateToProps = (state) => {
 	console.log(state);
   return {
     tasks: state.home.tasks,
-    task: state.home.task
+    task: state.home.task,
+    editMode: state.home.editMode
 	};
 };
 
@@ -32,6 +33,11 @@ const mapDispatchToProps = (dispatch) => {
       home.deleteTask(data);
       console.log('Reloading Home');
       dispatch(push('/'));
+    },
+    toggleEditMode: () => {
+      console.log('Toggling Edit Mode');
+      home.toggleEditMode();
+      home.loadTasks();
     }
   };
 };

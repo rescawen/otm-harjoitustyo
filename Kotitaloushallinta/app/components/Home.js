@@ -13,8 +13,8 @@ export default class Home extends Component {
     this.props.goToAddTask();
   };
 
-  triggerEditMode = () => {
-
+  toggleEditMode = () => {
+    this.props.toggleEditMode();
   };
 
   editTask = (payload) => {
@@ -45,6 +45,7 @@ export default class Home extends Component {
         title={task.title}
         days={task.days}
         startingTime={task.startingTime}
+        editMode={this.props.editMode}
         id={task.id}
 
         // conditional rendering for these 2
@@ -55,8 +56,13 @@ export default class Home extends Component {
     return (
       <div>
         {tasksList}
-        <a onClick={this.triggerEditMode} className="btn-floating btn-large right waves-effect waves-light red"><i className="material-icons">menu</i></a>
-        <a onClick={this.goToAddTask} className="btn-floating btn-large right waves-effect waves-light red"><i className="material-icons">add</i></a>
+        <div style={{position: 'fixed', bottom: '10px', right: '10px'}}>
+          <div>
+            <a onClick={this.toggleEditMode} className="btn-floating btn-large waves-effect waves-light red"><i className="material-icons">menu</i></a>
+          </div><div style={{marginTop: '10px'}}>
+          <a onClick={this.goToAddTask} className="btn-floating btn-large waves-effect waves-light red"><i className="material-icons">add</i></a>
+          </div>
+        </div>
       </div>
     );
   }
