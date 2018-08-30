@@ -6,13 +6,13 @@ import homeActions from '../actions/home';
 
 
 const mapStateToProps = (state) => {
-	console.log('Loading HomePage');
-	console.log(state);
+  console.log('Loading HomePage');
+  console.log(state);
   return {
     tasks: state.home.tasks,
     task: state.home.task,
     editMode: state.home.editMode
-	};
+  };
 };
 
 const mapDispatchToProps = (dispatch) => {

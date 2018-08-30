@@ -6,17 +6,17 @@ import homeActions from '../actions/home';
 import { withRouter } from 'react-router';
 
 const mapStateToProps = (state) => {
-	console.log('Loading AddTaskPage');
+  console.log('Loading AddTaskPage');
   return {
-	  tasks: state.home.tasks,
-	  task: state.home.task
-	};
+    tasks: state.home.tasks,
+    task: state.home.task
+  };
 };
 
 const mapDispatchToProps = (dispatch) => {
   const home = bindActionCreators(homeActions, dispatch);
   return {
-  	goToHome: () => {
+    goToHome: () => {
       console.log('Calling dispatch for Home');
       dispatch(push('/'));
     },

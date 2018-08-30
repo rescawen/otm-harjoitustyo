@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Task from './Task';
 
 export default class Home extends Component {
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.props.loadTasks();
     console.log(this.props);
     console.log('loading?');
@@ -26,7 +26,7 @@ export default class Home extends Component {
   };
 
   deleteTask = (payload) => {
-      this.props.deleteTask(payload);
+    this.props.deleteTask(payload);
   };
 
   static propTypes = {
@@ -40,13 +40,14 @@ export default class Home extends Component {
   
 
   render() {
-    const tasksList = this.props.tasks.map(task => (
+    const tasksList = this.props.tasks.map((task, i) => (
       <Task
         title={task.title}
         days={task.days}
         startingTime={task.startingTime}
         editMode={this.props.editMode}
         id={task.id}
+        key={i}
 
         // conditional rendering for these 2
         deleteTask={this.deleteTask}
@@ -60,7 +61,7 @@ export default class Home extends Component {
           <div>
             <a onClick={this.toggleEditMode} className="btn-floating btn-large waves-effect waves-light red"><i className="material-icons">menu</i></a>
           </div><div style={{marginTop: '10px'}}>
-          <a onClick={this.goToAddTask} className="btn-floating btn-large waves-effect waves-light red"><i className="material-icons">add</i></a>
+            <a onClick={this.goToAddTask} className="btn-floating btn-large waves-effect waves-light red"><i className="material-icons">add</i></a>
           </div>
         </div>
       </div>

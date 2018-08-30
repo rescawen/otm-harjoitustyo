@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "electron-react-redux-boilerplate",
   "main": "init.js",
+  "jest": {
+    "testURL": "http://localhost/"
+  },
   "author": {
     "name": "Jordan Schroter",
     "email": "email@author.com"
@@ -28,6 +31,7 @@
     "babel-cli": "^6.22.2",
     "babel-core": "^6.2.1",
     "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.3",
     "babel-plugin-istanbul": "^4.1.6",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-runtime": "^6.22.0",
@@ -40,8 +44,11 @@
     "electron-builder": "^20.0.7",
     "electron-devtools-installer": "^2.1.0",
     "electron-mocha": "^6.0.1",
+    "enzyme": "^3.4.4",
+    "enzyme-adapter-react-16": "^1.2.0",
     "eslint": "^4.3.0",
     "eslint-plugin-react": "^7.1.0",
+    "jest": "^22.4.3",
     "npm-run-all": "^4.0.1",
     "nyc": "^12.0.2",
     "redux-mock-store": "^1.2.2",
@@ -54,8 +61,9 @@
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "develop": "npm run private:compile -- --source-maps true && run-p -r private:watch private:serve",
-    "test": "electron-mocha --renderer -R spec --require babel-core/register test/**/*.spec.js",
     "lint": "eslint --no-ignore scripts app test *.js",
+    "test": "jest --runInBand",
+    "coverage": "jest --coverage",
     "pack": "run-s private:clean private:compile private:build:all",
     "pack:mac": "run-s private:clean private:compile private:build:mac",
     "pack:win": "run-s private:clean private:compile private:build:win",

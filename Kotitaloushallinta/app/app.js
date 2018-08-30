@@ -15,7 +15,7 @@ const syncHistoryWithStore = (store, history) => {
 
 const initialState = {
 
-}
+};
 
 const routerHistory = createMemoryHistory();
 const store = configureStore(initialState, routerHistory);

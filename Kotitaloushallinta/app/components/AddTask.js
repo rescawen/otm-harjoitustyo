@@ -34,12 +34,12 @@ export default class AddTask extends Component {
 
     if (this.state.title.length < 1) {
       isError = true;
-      errors.titleError = "validate invalid";
+      errors.titleError = 'validate invalid';
     }
 
     if (!Number.isInteger(Number(this.state.days)) || Number(this.state.days) < 1 || Number(this.state.days) > 30) {
       isError = true;
-      errors.daysError = "validate invalid";
+      errors.daysError = 'validate invalid';
     }
 
     this.setState({
@@ -77,24 +77,24 @@ export default class AddTask extends Component {
         <br />
 
         
-          <div className="input-field s6">
-            <i className="material-icons prefix">home</i>
-            <label for="icon_prefix2">Task Name</label>
-            <input id="icon_prefix2" onChange={this.onChange} className={this.state.titleError} name="title" type="text" value={this.state.title} />
-            <span class="helper-text" data-error="Task title cannot be empty" data-success=""></span>
-          </div>
-          <div className="input-field s6">
-            <i class="material-icons prefix">access_time</i>
-            <label for="icon_prefix2">Day Cycle</label>
-            <input id="icon_prefix2" onChange={this.onChange} className={this.state.daysError} name="days" type="text" value={this.state.days} />
-            <span className="helper-text" data-error="Task has to have a day cycle between 1 and 30" data-success=""></span>
-          </div>
+        <div className="input-field s6">
+          <i className="material-icons prefix">home</i>
+          <label htmlFor="icon_prefix2">Task Name</label>
+          <input id="icon_prefix2" onChange={this.onChange} className={this.state.titleError} name="title" type="text" value={this.state.title} />
+          <span className="helper-text" data-error="Task title cannot be empty" data-success=""></span>
+        </div>
+        <div className="input-field s6">
+          <i className="material-icons prefix">access_time</i>
+          <label htmlFor="icon_prefix2">Day Cycle</label>
+          <input id="icon_prefix2" onChange={this.onChange} className={this.state.daysError} name="days" type="text" value={this.state.days} />
+          <span className="helper-text" data-error="Task has to have a day cycle between 1 and 30" data-success=""></span>
+        </div>
 
-          <br />
+        <br />
 
-          <div>
-            <button className="btn waves-effect waves-light" type="submit" name="action" onClick={this.onSubmit}>Create Task<i className="material-icons right">send</i></button>
-          </div>
+        <div>
+          <button className="btn waves-effect waves-light" type="submit" name="action" onClick={this.onSubmit}>Create Task<i className="material-icons right">send</i></button>
+        </div>
         
 
       </div>

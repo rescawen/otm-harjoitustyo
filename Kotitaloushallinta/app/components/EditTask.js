@@ -2,17 +2,19 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export default class EditTask extends Component {
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     // fetch the selected task's details and store in state
     const id = this.props.match.params.id;
     const task = this.props.tasks.find(function (task) {
       return task.id === id;
     });
-    if (!!task) {
-      this.state.title = task.title;
-      this.state.days = task.days;
-      this.state.id = task.id;
-      this.state.startingTime = task.startingTime;
+    if (task) {
+      this.setState({
+        title: task.title,
+        days: task.days,
+        id: task.id,
+        startingTime: task.startingTime
+      });
     }
   }
 
@@ -24,7 +26,7 @@ export default class EditTask extends Component {
   replaceByKey = (array, params, newValue) => {
     array.some(function (item, index) {
       if (array[index][params.key] === params.value) {
-        array[index] = newValue
+        array[index] = newValue;
         return true;
       }
       return false;
@@ -55,12 +57,12 @@ export default class EditTask extends Component {
 
     if (this.state.title.length < 1) {
       isError = true;
-      errors.titleError = "Task title cannot be empty";
+      errors.titleError = 'Task title cannot be empty';
     }
 
     if (this.state.days < 1) {
       isError = true;
-      errors.daysError = "Task has to have minimum of a 1 day cycle";
+      errors.daysError = 'Task has to have minimum of a 1 day cycle';
     }
 
     // what does this setstate do?
@@ -87,18 +89,18 @@ export default class EditTask extends Component {
       <div className="main">
         <br />
 
-        <button class="btn waves-effect waves-light" onClick={this.goToHome}>Back to Homepage</button>
+        <button className="btn waves-effect waves-light" onClick={this.goToHome}>Back to Homepage</button>
 
         <br />
         <br />
         <div className="input-field s6">
-        <i class="material-icons prefix">home</i>
+          <i className="material-icons prefix">home</i>
           <label className="active">Task Name</label>
           <input onChange={this.onChange} name="title" type="text" value={this.state.title} />
 
         </div>
         <div className="input-field s6">
-        <i class="material-icons prefix">access_time</i>
+          <i className="material-icons prefix">access_time</i>
           <label className="active">Day Cycle</label>
           <input onChange={this.onChange} name="days" type="text" value={this.state.days} />
 
@@ -111,7 +113,7 @@ export default class EditTask extends Component {
             </label>
           </p>
         </div>
-        <button class="btn waves-effect waves-light" onClick={this.editTask}>Edit Task<i class="material-icons right">send</i></button>
+        <button className="btn waves-effect waves-light" onClick={this.editTask}>Edit Task<i className="material-icons right">send</i></button>
 
       </div>
     );

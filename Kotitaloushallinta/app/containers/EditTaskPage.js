@@ -3,20 +3,20 @@ import { push } from 'react-router-redux';
 import { bindActionCreators } from 'redux';
 import EditTask from '../components/EditTask';
 import homeActions from '../actions/home';
-import { withRouter } from 'react-router'
+import { withRouter } from 'react-router';
 
 const mapStateToProps = (state) => {
-	console.log('Loading EditTaskPage');
+  console.log('Loading EditTaskPage');
   return {
-	  tasks: state.home.tasks,
-	  task: state.home.task
-	};
+    tasks: state.home.tasks,
+    task: state.home.task
+  };
 };
 
 const mapDispatchToProps = (dispatch) => {
   const home = bindActionCreators(homeActions, dispatch);
   return {
-  	goToHome: (data) => {
+    goToHome: () => {
       console.log('Calling dispatch for Home');
       dispatch(push('/'));
     },
@@ -28,4 +28,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(EditTask))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(EditTask));
