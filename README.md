@@ -49,6 +49,27 @@ npm run coverage
 
 Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto _otm-harjoitustyo/Kotitaloushallinta/coverage/lcov-report/index.html_
 
+### Suoritettavan tiedoston generointi
+
+Tiedostot generoidaan komenolla
+
+```
+npm run pack:mac
+npm run pack:win 
+npm run pack:linux
+```
+
+generoi hakemistoon _dist_ suoritettavan tiedoston _Kotitaloushallinta Setup 0.0.0_ kyseiselle alustalle
+
+Kaikille yhtää aikaa komenolla
+
+```
+npm run pack
+```
+
+pitäisi generoida kaikille alustoille paketin, mutta esimerkiksi windows:lla ei pysty koska macOS takia heittää virheilmoituksen.
+
+
 ### Checkstyle
 
 Tiedostoon [.eslintrc](https://github.com/rescawen/otm-harjoitustyo/blob/master/Kotitaloushallinta/.eslintrc) määrittelemät tarkistukset suoritetaan komennolla
