@@ -44,7 +44,7 @@ npm run test
 Testikattavuusraportti luodaan komennolla
 
 ```
-nyc npm test
+npm run coverage
 ```
 
 Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto 
