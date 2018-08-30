@@ -48,3 +48,12 @@ npm run coverage
 ```
 
 Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto _otm-harjoitustyo/Kotitaloushallinta/coverage/lcov-report/index.html_
+
+### Checkstyle
+
+Tiedostoon [.eslintrc](https://github.com/rescawen/otm-harjoitustyo/blob/master/Kotitaloushallinta/.eslintrc) määrittelemät tarkistukset suoritetaan komennolla
+
+```
+npm run lint
+```
+Mahdolliset virheilmoitukset tulostuvat komentoriville.
