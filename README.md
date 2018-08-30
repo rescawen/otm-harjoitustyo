@@ -47,5 +47,4 @@ Testikattavuusraportti luodaan komennolla
 npm run coverage
 ```
 
-Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto 
-?
+Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto _otm-harjoitustyo/Kotitaloushallinta/coverage/lcov-report/index.html_
