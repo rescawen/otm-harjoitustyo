@@ -41,4 +41,4 @@ Luokka/pakkauskaavio:
 
 ## Tietojen pysyväistallennus
 
-
+Tietojen pysyväistallennus on tehty boilerplate:n mukana rakennettun [Redux Local Storage](https://github.com/elgerlambert/redux-localstorage/) avulla. Se on kytkitty [Store](https://github.com/rescawen/otm-harjoitustyo/blob/master/Kotitaloushallinta/app/store.js):n yksinkertaisella importilla.
