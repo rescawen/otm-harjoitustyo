@@ -16,7 +16,12 @@ Uusi nykyinen projekti
 | 10.7. | 1 | testien kirjottaminen|
 | 11.7. | 2 | lisää testaus asioita ja tiedostojen siivoomista|
 | 12.7. | 1 | dokumentaatio kirjottaminen ja tiedostojen siivoomista|
-| 13.7. | 2 | fomr validation logiikka lisätty ja koko käyttäliittymä materialized|
+| 13.7. | 2 | form validation logiikka lisätty ja koko käyttäliittymä materialized|
+| 7.8. | 2 | |
+| 29.8. | 2 | |
+| 30.8. | 2 | |
+| 16.9. | 2 | |
+| 17.9. | 2 | |
 | yht   | 33 | | 
 
 
