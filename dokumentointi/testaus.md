@@ -8,6 +8,8 @@ Ohjelmassa ei ole tehty integraatio tai järjestelmätason testejä koska boiler
 
 Käyttöliittymäkerrosta lukuunottamatta sovelluksen testauksen rivikattavuus on 50%
 
+![testauskuva](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/kuvat/rivikattavuus.png)
+
 
 ## Sovellukseen jääneet laatuongelmat
 
