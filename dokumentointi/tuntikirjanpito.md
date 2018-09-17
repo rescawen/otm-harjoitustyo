@@ -17,12 +17,12 @@ Uusi nykyinen projekti
 | 11.7. | 2 | lisää testaus asioita ja tiedostojen siivoomista|
 | 12.7. | 1 | dokumentaatio kirjottaminen ja tiedostojen siivoomista|
 | 13.7. | 2 | form validation logiikka lisätty ja koko käyttäliittymä materialized|
-| 7.8. | 2 | |
-| 29.8. | 2 | |
-| 30.8. | 2 | |
-| 16.9. | 2 | |
-| 17.9. | 2 | |
-| yht   | 33 | | 
+| 14.7. | 1 | dokumentoinnin kirjottaminen ja koodia refaktoroitu |
+| 7.8. | 4 | Viimeisiä toiminallisuuksia lisätty|
+| 30.8. | 6 | Kaikki koodiin liittyvät asiat valmiina |
+| 16.9. | 2 | Viimeiset dokumentointi lisäykset|
+| 17.9. | 2 | Palautus valmis|
+| yht   | 48 | | 
 
 
 Alkuperäinen projekti 
