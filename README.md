@@ -1,4 +1,8 @@
-# OTM-harjoitustyö
+# Kotitaloushallinta
+
+Sovelluksen avulla käyttäjä pitää kirjaa ja voi optimoida kotitalouden siivoomista ja ylläpitoa. Kaikki eri kotitalouden työt jaetaan sykleihin.
+
+Sovellus pyrkii tuoda "mindful" tapaista ajattelua siivoomiseen. Käyttäjä voi vain vilkausta sovellusta pari sekunttia ja saada hyvän ymmärryksen mitä töitä pitäisi tehdä seuraavaksi, sen sijaan että pitäisi miettiä asiasta.
 
 ## Kieli
 
