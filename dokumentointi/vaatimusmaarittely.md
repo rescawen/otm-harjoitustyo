@@ -25,16 +25,13 @@ Sovellus tehdään graafisella käyttöliittymällä. Electronissa käyttöliitt
 
 - käyttäjä näkee tämän hetkisen tilanteen kaikista eri kotitalous töistä. Kuinka lähellä ne ovat syklin loppuun. 
 
-- käyttäjä näkee listan kaikista eri kotitalous töistä. 
-  - käyttäjä voi mennä tietyn työn sisälle
-
 ### Uuden työn luominen ja muuttaminen
 
 - käyttäjä voi luoda uuden työn
   
 - kun käyttäjä on tietyn työn sisällä hänellä on seuraavat vaihtoehdot
-  - käyttäjä voi päivittää nykyisen syklin tilannetta
-  - käyttäjä voi muuttaa syklin luonnollista etenemistä
+  - käyttäjä voi päivittää nykyisen syklin nimeä ja pituutta
+  - käyttäjä voi aloittaa syklin uudestaan
 
 ## Jatkokehitysideoita
 
