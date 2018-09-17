@@ -18,7 +18,9 @@ Javascript ja Electron Framework
 
 ## Releaset
 
-[Viikko 5/6](https://github.com/rescawen/otm-harjoitustyo/releases)
+[Loppupalautus](https://github.com/rescawen/otm-harjoitustyo/releases/tag/loppupalautus)
+
+[Viikko 5/6](https://github.com/rescawen/otm-harjoitustyo/releases/tag/viikko5%2F6)
 
 ## Komentorivitoiminnot
 
