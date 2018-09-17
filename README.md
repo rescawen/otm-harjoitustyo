@@ -14,6 +14,8 @@ Javascript ja Electron Framework
 
 ## Releaset
 
+[Viikko 5/6](https://github.com/rescawen/otm-harjoitustyo/releases)
+
 ## Komentorivitoiminnot
 
 ### Asentaminen
