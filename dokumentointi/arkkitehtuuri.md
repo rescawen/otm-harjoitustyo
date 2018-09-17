@@ -52,5 +52,7 @@ Uuden task:n luovan create task-painikkeen klikkaamisen jälkeen sovelluksen kon
 
 ![Sekvenssikaaviokuva](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/kuvat/kotitaloushallintaSQDIA.png)
 
+Tapahtumakäsittelijä kutsuu sovelluslogiikan metodia onSubmit joka ensin validoi onko parametrissä tiedot kirjoitettu parametrin mukaisesti oikein ja sitten kutsuu newtask metodin. _newTask_ metodi luo uuden task olion ja puskee sen eteenpäin Redux Store:n. 
+
 
 
