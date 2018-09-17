@@ -52,7 +52,13 @@ Uuden task:n luovan create task-painikkeen klikkaamisen jälkeen sovelluksen kon
 
 ![Sekvenssikaaviokuva](https://github.com/rescawen/otm-harjoitustyo/blob/master/dokumentointi/kuvat/kotitaloushallintaSQDIA.png)
 
-Tapahtumakäsittelijä kutsuu AddTask componentin metodia [onSubmit](https://github.com/rescawen/otm-harjoitustyo/blob/master/Kotitaloushallinta/app/components/AddTask.js#L53) joka ensin validoi onko parametrissä tiedot kirjoitettu parametrin mukaisesti oikein ja sitten kutsuu newtask metodin. _newTask_ metodi luo uuden task olion ja puskee sen eteenpäin Redux Store:n. 
+Tapahtumakäsittelijä kutsuu AddTask componentin metodia [_onSubmit_](https://github.com/rescawen/otm-harjoitustyo/blob/master/Kotitaloushallinta/app/components/AddTask.js#L53) joka ensin validoi onko parametrissä tiedot kirjoitettu parametrin mukaisesti oikein ja sitten kutsuu newtask metodin. _newTask_ metodi luo uuden task olion ja puskee sen eteenpäin Redux Store:n. 
+
+Data flow jatkuu sillein että AddTaskPage metodi [_mapDispatchToProps_](https://github.com/rescawen/otm-harjoitustyo/blob/master/Kotitaloushallinta/app/containers/AddTaskPage.js#L25) newtask osa kutsuu reducer:sta [_default handleActions_](https://github.com/rescawen/otm-harjoitustyo/blob/master/Kotitaloushallinta/app/reducers/home.js#L35) jossa se state oikeasti muutetaan. Sen jälkeen uusi state palautetaan ja se päivittyy taso tasolta kunnes Homepage renderoidaan uudestaan. 
+
+## Ohjelman arkkitehtuurin loppusanat
+
+Tämä oli todellakin vähän "leap of faith" kun tuli valittua tämä boilerplate kun Java:n kanssa ei saanut mitään kunnollista toimimaan. Minulla ei ole mitään huonoa sanottavaa Electron:sta ja tästä Boilerplate:sta rakenteen näkökulmasta. 
 
 
 
